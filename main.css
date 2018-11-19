@@ -1,0 +1,496 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("./leaves.jpg");
+}
+
+p {
+  font-family: "Muli", sans-serif;
+}
+
+h2 {
+  font-family: "Passion One", sans-serif;
+  font-weight: 700;
+}
+@keyframes bodygrow {
+  from {
+    width: 200px;
+  }
+  to {
+    width: 400px;
+  }
+}
+
+@keyframes headup {
+  from {
+    transform: translateY(0);
+    z-index: 0;
+    width: 0;
+  }
+  to {
+    transform: translateY(-290px);
+    z-index: 10;
+    width: 185px;
+  }
+}
+
+@keyframes lfoot {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  to {
+    transform: translate(-70px, 250px) rotate(10deg);
+  }
+}
+
+@keyframes rfoot {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  to {
+    transform: translate(70px, 250px) rotate(-10deg);
+  }
+}
+
+@keyframes lwing {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    z-index: 0;
+  }
+  25% {
+    transform: translate(-80px, 50px) rotate(10deg);
+  }
+  50% {
+    transform: translate(-105px, 75px) rotate(20deg);
+  }
+  75% {
+    transform: translate(-130px, 100px) rotate(60deg);
+  }
+  100% {
+    transform: translate(-155px, 125px) rotate(20deg);
+    z-index: 1030;
+  }
+}
+
+@keyframes rwing {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    z-index: 0;
+  }
+  25% {
+    transform: translate(80px, 50px) rotate(-10deg);
+  }
+  50% {
+    transform: translate(105px, 75px) rotate(-20deg);
+  }
+  75% {
+    transform: translate(130px, 100px) rotate(-60deg);
+  }
+  100% {
+    transform: translate(155px, 125px) rotate(-20deg);
+    z-index: 1030;
+  }
+}
+
+@keyframes f1 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+    width: 100px;
+  }
+  to {
+    transform: translate(-175px, 180px) rotate(-10deg);
+    width: 270px;
+  }
+}
+
+@keyframes f2 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+    width: 100px;
+  }
+  to {
+    transform: translate(-260px, 100px) rotate(-10deg);
+    width: 270px;
+  }
+}
+
+@keyframes f3 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+    width: 100px;
+  }
+  to {
+    transform: translate(-270px, -20px) rotate(-10deg);
+    width: 270px;
+  }
+}
+
+@keyframes f4 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+    width: 100px;
+  }
+  to {
+    transform: translate(-230px, -130px) rotate(-14deg);
+    width: 270px;
+  }
+}
+
+@keyframes f5 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+    width: 100px;
+  }
+  to {
+    transform: translate(-150px, -220px) rotate(-10deg);
+    width: 200px;
+  }
+}
+
+@keyframes f6 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+    width: 100px;
+  }
+  to {
+    transform: translate(0px, -300px) rotate(-8deg);
+    width: 170px;
+  }
+}
+
+@keyframes f7 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+    width: 100px;
+  }
+  to {
+    transform: translate(150px, -220px) rotate(10deg);
+    width: 200px;
+  }
+}
+
+@keyframes f8 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+    width: 100px;
+  }
+  to {
+    transform: translate(240px, -130px) rotate(15deg);
+    width: 260px;
+  }
+}
+
+@keyframes f9 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+    width: 100px;
+  }
+  to {
+    transform: translate(290px, -30px) rotate(12deg);
+    width: 263px;
+  }
+}
+
+@keyframes f10 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+    width: 100px;
+  }
+  to {
+    transform: translate(275px, 99px) rotate(7deg);
+    width: 280px;
+  }
+}
+
+@keyframes f11 {
+  from {
+    transform: translate(0, 0) rotate(0deg);
+    width: 100px;
+  }
+  to {
+    transform: translate(210px, 180px) rotate(5deg);
+    width: 268px;
+  }
+}
+
+@keyframes headwiggle {
+  0% {
+    transform: translateY(-290px) rotate(0deg);
+    transform-origin: bottom center;
+    z-index: 10;
+    width: 185px;
+  }
+  50% {
+    transform: translateY(-270px) rotate(20deg);
+    transform-origin: bottom center;
+    z-index: 4000;
+    width: 200px;
+  }
+
+  100% {
+    transform: translateY(-290px) rotate(0deg);
+    transform-origin: bottom center;
+    z-index: 10;
+    width: 185px;
+  }
+}
+
+@keyframes leftiris {
+  0% {
+    transform: translateX(-4px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes rightiris {
+  0% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(8px);
+  }
+}
+
+@keyframes slideleft {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-2000px);
+  }
+  100% {
+    transform: translateX(-4000px);
+  }
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  padding-top: 20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  animation: slideleft 6s ease-in;
+  animation-fill-mode: forwards;
+  animation-delay: 15s;
+}
+
+#pan {
+  width: 50%;
+  min-width: 300px;
+  height: 50vh;
+  transform: translateX(2000px);
+  background-color: rgba(255, 255, 255, 1);
+  border: 4px solid #bea551;
+  border-radius: 25% 75% 30% 80% /75% 25% 80% 25%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#pan img {
+  width: 60%;
+}
+
+#message {
+  width: 50%;
+  min-width: 300px;
+  height: 50vh;
+  transform: translateX(4000px);
+  background-color: rgba(255, 255, 255, 1);
+  border: 4px solid #bea551;
+  border-radius: 75% 25% 80% 25% / 25% 75% 30% 80%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+
+#message p {
+  font-size: 18px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#sass-logo {
+  width: 150px;
+  margin-top: 15px;
+}
+
+#bird-head {
+  width: 185px;
+  position: absolute;
+  z-index: 0;
+  animation: headup 5s ease-out, headwiggle 1s ease-out;
+  animation-delay: 0s, 13s;
+  animation-fill-mode: forwards, forwards;
+}
+
+#bird-bod {
+  width: 375px;
+  height: 380px;
+  border-radius: 100%;
+  background-color: #944f00;
+  position: relative;
+  z-index: 1000;
+  /* animation: bodygrow 5s ease;
+  animation-fill-mode: forwards; */
+}
+
+#bird-lfoot {
+  width: 90px;
+  position: absolute;
+  z-index: 0;
+  animation: lfoot 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+#bird-rfoot {
+  width: 90px;
+  position: absolute;
+  z-index: 0;
+  animation: rfoot 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+}
+
+#bird-lwing {
+  width: 100px;
+  position: absolute;
+  z-index: 0;
+  animation: lwing 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+}
+
+#bird-rwing {
+  width: 100px;
+  position: absolute;
+  z-index: 0;
+  animation: rwing 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;
+}
+
+#bird-f1 {
+  width: 100px;
+  position: absolute;
+  z-index: 0;
+  animation: f1 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 8.5s;
+}
+
+#bird-f2 {
+  width: 100px;
+  position: absolute;
+  z-index: 0;
+  animation: f2 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 9.5s;
+}
+
+#bird-f3 {
+  width: 100px;
+  position: absolute;
+  z-index: 0;
+  animation: f3 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 6s;
+}
+
+#bird-f4 {
+  width: 100px;
+  position: absolute;
+  z-index: 0;
+  animation: f4 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 7s;
+}
+
+#bird-f5 {
+  width: 100px;
+  position: absolute;
+  z-index: 0;
+  animation: f5 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+}
+
+#bird-f6 {
+  width: 100px;
+  position: absolute;
+  z-index: 0;
+  animation: f6 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 10.5s;
+}
+
+#bird-f7 {
+  width: 100px;
+  position: absolute;
+  z-index: 0;
+  animation: f7 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 6.5s;
+}
+
+#bird-f8 {
+  width: 100px;
+  position: absolute;
+  z-index: 0;
+  animation: f8 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 8s;
+}
+
+#bird-f9 {
+  width: 100px;
+  position: absolute;
+  z-index: 0;
+  animation: f9 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 9s;
+}
+
+#bird-f10 {
+  width: 100px;
+  position: absolute;
+  z-index: 0;
+  animation: f10 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 7.5s;
+}
+
+#bird-f11 {
+  width: 100px;
+  position: absolute;
+  z-index: 0;
+  animation: f11 2s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 11s;
+}
+
+#leftiris {
+  transform: translate(-4px, 0px);
+  animation: leftiris 2s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 13.5s;
+}
+
+#rightiris {
+  transform: translate(4px, 0px);
+  animation: rightiris 2s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 13.5s;
+}
